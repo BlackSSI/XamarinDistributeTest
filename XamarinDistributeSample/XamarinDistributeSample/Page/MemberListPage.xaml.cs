@@ -9,6 +9,7 @@ using Xamarin.Forms;
 using XamarinDistributeSample.Data;
 using XamarinDistributeSample.Model;
 using XamarinDistributeSample.ViewModel;
+using XamarinDistributeSample.Interface;
 
 using HockeyApp;
 
@@ -36,11 +37,8 @@ namespace XamarinDistributeSample.Page
             _member = (Member)e.SelectedItem;
             //DisplayAlert("Item Selected", member.UserId, "Ok");
 
-            //HockeyApp.MetricsManager.TrackEvent("Custom Event",
-            //    new Dictionary<string, string> { { "property", _member.FullName } },
-            //    new Dictionary<string, double> { { "time", 1.0 } }
-            //    );
-            HockeyApp.MetricsManager.TrackEvent(_member.UserCounterName);
+            IEventMemberCount eventCount = DependencyService.Get<IEventMemberCount>(DependencyFetchTarget.NewInstance);
+            eventCount.TrackCustomEvent(_member.UserCounterName);
 
             var detailPage = new Page.MemberContentsPage(_member);
             this.Navigation.PushAsync(detailPage);
