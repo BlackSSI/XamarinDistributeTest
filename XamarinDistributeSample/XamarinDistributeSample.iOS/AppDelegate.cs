@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using HockeyApp.iOS;
 
 namespace XamarinDistributeSample.iOS
 {
@@ -23,6 +24,11 @@ namespace XamarinDistributeSample.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
+
+            var manager = BITHockeyManager.SharedHockeyManager;
+            manager.Configure("a8670e051ae045f4a72a604457921ad0");
+            manager.StartManager();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

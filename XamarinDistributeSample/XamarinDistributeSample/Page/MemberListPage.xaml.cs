@@ -11,6 +11,8 @@ using XamarinDistributeSample.Model;
 using XamarinDistributeSample.ViewModel;
 using XamarinDistributeSample.Interface;
 
+using HockeyApp;
+
 namespace XamarinDistributeSample.Page
 {
     public partial class MemberListPage : ContentPage
