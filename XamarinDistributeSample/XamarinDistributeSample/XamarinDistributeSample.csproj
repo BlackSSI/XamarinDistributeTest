@@ -69,6 +69,7 @@
     <Compile Include="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Interface\IEventMemberCount.cs" />
     <Compile Include="Model\AppStatus.cs" />
     <Compile Include="Model\Member.cs" />
     <Compile Include="Model\MemberContent.cs" />
