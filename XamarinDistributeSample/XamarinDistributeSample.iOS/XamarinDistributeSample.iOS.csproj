@@ -110,7 +110,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <CodesignKey>iPhone Developer: Yoriyuki Shimizu (M35V7V8DCQ)</CodesignKey>
+    <CodesignKey>iPhone Developer</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dist-iOS|iPhone'">
     <OutputPath>bin\iPhone\Dist-iOS\</OutputPath>
@@ -146,10 +146,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <ITunesArtwork Include="iTunesArtwork" />
     <ITunesArtwork Include="iTunesArtwork@2x" />
-    <None Include="MobileProvision\Developer\XamarinDS1D.mobileprovision" />
+    <None Include="MobileProvision\XamarinDSDev.mobileprovision" />
+    <None Include="MobileProvision\XamarinDSDev.p12" />
     <None Include="packages.config" />
-    <None Include="MobileProvision\XamarinDistibuteSample.p12" />
-    <None Include="MobileProvision\Distribution\XamarinDistributeSample.mobileprovision" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Default-568h%402x.png" />
