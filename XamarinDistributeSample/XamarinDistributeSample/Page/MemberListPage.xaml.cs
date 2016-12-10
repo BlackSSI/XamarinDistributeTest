@@ -35,7 +35,7 @@ namespace XamarinDistributeSample.Page
         {
             if (e.SelectedItem == null) return;
             _member = (Member)e.SelectedItem;
-            //DisplayAlert("Item Selected", member.UserId, "Ok");
+            //DisplayAlert("Item Selected", _member.UserId, "Ok");
 
             IEventMemberCount eventCount = DependencyService.Get<IEventMemberCount>(DependencyFetchTarget.NewInstance);
             eventCount.TrackCustomEvent(_member.UserCounterName);
