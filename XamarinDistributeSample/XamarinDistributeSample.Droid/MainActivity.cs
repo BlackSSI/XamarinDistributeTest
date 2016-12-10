@@ -7,6 +7,9 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 
+using HockeyApp.Android;
+using HockeyApp.Android.Metrics;
+
 namespace XamarinDistributeSample.Droid
 {
     [Activity(Label = "XamarinDistributeSample.Droid", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
@@ -20,6 +23,9 @@ namespace XamarinDistributeSample.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            CrashManager.Register(this, "c7e7e0cf37a74265a0a89cf8045065db");
+
             LoadApplication(new App());
         }
     }

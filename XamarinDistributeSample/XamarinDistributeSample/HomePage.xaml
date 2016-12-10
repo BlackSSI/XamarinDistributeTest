@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinDistributeSample.HomePage"
-             Title="HomePage">
+             Title="HomePage:HockeyApp">
   <StackLayout Spacing="4" VerticalOptions="Center">
     <Button Text="メンバーリスト" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="Button_MemberList_Clicked" />
   </StackLayout>

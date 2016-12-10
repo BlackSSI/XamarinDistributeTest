@@ -10,6 +10,8 @@ using XamarinDistributeSample.Data;
 using XamarinDistributeSample.Model;
 using XamarinDistributeSample.ViewModel;
 
+using HockeyApp;
+
 namespace XamarinDistributeSample.Page
 {
     public partial class MemberListPage : ContentPage
@@ -33,6 +35,12 @@ namespace XamarinDistributeSample.Page
             if (e.SelectedItem == null) return;
             _member = (Member)e.SelectedItem;
             //DisplayAlert("Item Selected", member.UserId, "Ok");
+
+            HockeyApp.MetricsManager.TrackEvent("Custom Event",
+                new Dictionary<string, string> { { "MemberName", _member.FullName } },
+                new Dictionary<string, double> { { "time", 1.0 } }
+                );
+
             var detailPage = new Page.MemberContentsPage(_member);
             this.Navigation.PushAsync(detailPage);
         }
