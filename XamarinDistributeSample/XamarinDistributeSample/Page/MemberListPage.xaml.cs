@@ -37,7 +37,7 @@ namespace XamarinDistributeSample.Page
             //DisplayAlert("Item Selected", member.UserId, "Ok");
 
             HockeyApp.MetricsManager.TrackEvent("Custom Event",
-                new Dictionary<string, string> { { "MemberName", _member.FullName } },
+                new Dictionary<string, string> { { "property", _member.FullName } },
                 new Dictionary<string, double> { { "time", 1.0 } }
                 );
 
