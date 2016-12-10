@@ -40,7 +40,7 @@ namespace XamarinDistributeSample.Page
             //    new Dictionary<string, string> { { "property", _member.FullName } },
             //    new Dictionary<string, double> { { "time", 1.0 } }
             //    );
-            HockeyApp.MetricsManager.TrackEvent("");
+            HockeyApp.MetricsManager.TrackEvent(_member.UserCounterName);
 
             var detailPage = new Page.MemberContentsPage(_member);
             this.Navigation.PushAsync(detailPage);
