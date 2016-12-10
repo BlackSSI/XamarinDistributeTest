@@ -13,7 +13,7 @@ namespace XamarinDistributeSample.iOS
     {
         public void TrackCustomEvent(string eventName)
         {
-            HockeyApp.MetricsManager.TrackEvent(eventName);
+            //throw new NotImplementedException();
         }
     }
 }
