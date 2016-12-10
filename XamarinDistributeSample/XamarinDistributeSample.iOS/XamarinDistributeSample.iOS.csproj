@@ -110,6 +110,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodesignKey>iPhone Developer: Yoriyuki Shimizu (M35V7V8DCQ)</CodesignKey>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dist-iOS|iPhone'">
     <OutputPath>bin\iPhone\Dist-iOS\</OutputPath>

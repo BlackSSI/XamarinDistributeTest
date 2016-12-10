@@ -219,8 +219,6 @@ Global
 		{47A92B03-8D7A-4E0F-8A47-CE95053D6F23}.Dist-iOS|ARM.Deploy.0 = Dist-iOS|Any CPU
 		{47A92B03-8D7A-4E0F-8A47-CE95053D6F23}.Dist-iOS|iPhone.ActiveCfg = Dist-iOS|Any CPU
 		{47A92B03-8D7A-4E0F-8A47-CE95053D6F23}.Dist-iOS|iPhoneSimulator.ActiveCfg = Dist-iOS|Any CPU
-		{47A92B03-8D7A-4E0F-8A47-CE95053D6F23}.Dist-iOS|iPhoneSimulator.Build.0 = Dist-iOS|Any CPU
-		{47A92B03-8D7A-4E0F-8A47-CE95053D6F23}.Dist-iOS|iPhoneSimulator.Deploy.0 = Dist-iOS|Any CPU
 		{47A92B03-8D7A-4E0F-8A47-CE95053D6F23}.Dist-iOS|x64.ActiveCfg = Dist-iOS|Any CPU
 		{47A92B03-8D7A-4E0F-8A47-CE95053D6F23}.Dist-iOS|x64.Build.0 = Dist-iOS|Any CPU
 		{47A92B03-8D7A-4E0F-8A47-CE95053D6F23}.Dist-iOS|x64.Deploy.0 = Dist-iOS|Any CPU
@@ -295,6 +293,7 @@ Global
 		{F43D94D8-FA56-4D85-BA4C-68CA83143DC4}.Dist-iOS|iPhone.ActiveCfg = Dist-iOS|iPhone
 		{F43D94D8-FA56-4D85-BA4C-68CA83143DC4}.Dist-iOS|iPhone.Build.0 = Dist-iOS|iPhone
 		{F43D94D8-FA56-4D85-BA4C-68CA83143DC4}.Dist-iOS|iPhoneSimulator.ActiveCfg = Dist-iOS|iPhoneSimulator
+		{F43D94D8-FA56-4D85-BA4C-68CA83143DC4}.Dist-iOS|iPhoneSimulator.Build.0 = Dist-iOS|iPhoneSimulator
 		{F43D94D8-FA56-4D85-BA4C-68CA83143DC4}.Dist-iOS|x64.ActiveCfg = Dist-iOS|iPhone
 		{F43D94D8-FA56-4D85-BA4C-68CA83143DC4}.Dist-iOS|x86.ActiveCfg = Dist-iOS|iPhone
 		{F43D94D8-FA56-4D85-BA4C-68CA83143DC4}.Dist-UWP|Any CPU.ActiveCfg = Dist-UWP|iPhone
