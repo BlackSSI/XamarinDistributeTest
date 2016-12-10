@@ -11,6 +11,7 @@ namespace XamarinDistributeSample.Droid
         public void TrackCustomEvent(string eventName)
         {
             //throw new NotImplementedException();
+            HockeyApp.MetricsManager.TrackEvent(eventName);
         }
     }
 }
