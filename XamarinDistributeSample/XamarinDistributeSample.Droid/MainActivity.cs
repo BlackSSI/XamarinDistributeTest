@@ -6,9 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-
-using HockeyApp.Android;
-using HockeyApp.Android.Metrics;
+using Microsoft.Azure.Mobile;
 
 namespace XamarinDistributeSample.Droid
 {
@@ -24,7 +22,7 @@ namespace XamarinDistributeSample.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            CrashManager.Register(this, "c7e7e0cf37a74265a0a89cf8045065db");
+            MobileCenter.Configure("b901b97a-d18d-4df3-987d-8f953fdec970");
 
             LoadApplication(new App());
         }

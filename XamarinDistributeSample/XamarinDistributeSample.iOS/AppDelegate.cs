@@ -4,7 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-using HockeyApp.iOS;
+using Microsoft.Azure.Mobile;
 
 namespace XamarinDistributeSample.iOS
 {
@@ -25,9 +25,7 @@ namespace XamarinDistributeSample.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            var manager = BITHockeyManager.SharedHockeyManager;
-            manager.Configure("a8670e051ae045f4a72a604457921ad0");
-            manager.StartManager();
+            MobileCenter.Configure("c5d5226f-8048-4f75-954a-21b50f15b92a");
 
             LoadApplication(new App());
 

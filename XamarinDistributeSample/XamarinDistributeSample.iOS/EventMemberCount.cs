@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Microsoft.Azure.Mobile.Analytics;
 
 using XamarinDistributeSample.Interface;
 
@@ -12,7 +13,7 @@ namespace XamarinDistributeSample.iOS
     {
         public void TrackCustomEvent(string eventName)
         {
-            //throw new NotImplementedException();
+            Analytics.TrackEvent(eventName);
         }
 
         public void TrackUserMetric()

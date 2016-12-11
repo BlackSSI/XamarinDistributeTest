@@ -8,6 +8,11 @@ using Xamarin.Forms;
 
 using XamarinDistributeSample.Model;
 
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+
+
 namespace XamarinDistributeSample
 {
     public partial class App : Application
@@ -16,6 +21,8 @@ namespace XamarinDistributeSample
         public App()
         {
             InitializeComponent();
+
+            MobileCenter.Start(typeof(Analytics), typeof(Crashes));
 
             // The root page of your application
             MainPage = new NavigationPage(new HomePage());
