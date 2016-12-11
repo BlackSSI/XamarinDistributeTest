@@ -8,6 +8,8 @@ namespace XamarinDistributeSample.Interface
 {
     public interface IEventMemberCount
     {
+        void TrackUserMetric();
+
         void TrackCustomEvent(string eventName);
     }
 }
