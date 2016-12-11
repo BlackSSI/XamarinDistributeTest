@@ -16,6 +16,7 @@ namespace XamarinDistributeSample.Droid
 
         public void TrackUserMetric()
         {
+            throw new NotImplementedException();
         }
     }
 }

@@ -18,6 +18,7 @@ namespace XamarinDistributeSample.iOS
 
         public void TrackUserMetric()
         {
+            throw new NotImplementedException();
         }
     }
 }
