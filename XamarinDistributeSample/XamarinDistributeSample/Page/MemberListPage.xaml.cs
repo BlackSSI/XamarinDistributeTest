@@ -11,7 +11,6 @@ using XamarinDistributeSample.Model;
 using XamarinDistributeSample.ViewModel;
 using XamarinDistributeSample.Interface;
 
-using HockeyApp;
 
 namespace XamarinDistributeSample.Page
 {
@@ -36,9 +35,6 @@ namespace XamarinDistributeSample.Page
             if (e.SelectedItem == null) return;
             _member = (Member)e.SelectedItem;
             //DisplayAlert("Item Selected", _member.UserId, "Ok");
-
-            IEventMemberCount eventCount = DependencyService.Get<IEventMemberCount>(DependencyFetchTarget.NewInstance);
-            eventCount.TrackCustomEvent(_member.UserCounterName);
 
             var detailPage = new Page.MemberContentsPage(_member);
             this.Navigation.PushAsync(detailPage);

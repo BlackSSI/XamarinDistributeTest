@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 
 using XamarinDistributeSample.Interface;
-using HockeyApp;
 
 [assembly: Xamarin.Forms.Dependency(typeof(XamarinDistributeSample.iOS.EventMemberCount))]
 
@@ -15,6 +14,10 @@ namespace XamarinDistributeSample.iOS
         {
             //throw new NotImplementedException();
             HockeyApp.MetricsManager.TrackEvent(eventName);
+        }
+
+        public void TrackUserMetric()
+        {
         }
     }
 }
