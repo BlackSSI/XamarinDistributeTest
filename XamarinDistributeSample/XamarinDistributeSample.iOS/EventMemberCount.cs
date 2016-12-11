@@ -13,7 +13,6 @@ namespace XamarinDistributeSample.iOS
     {
         public void TrackCustomEvent(string eventName)
         {
-            Analytics.TrackEvent(eventName);
         }
 
         public void TrackUserMetric()

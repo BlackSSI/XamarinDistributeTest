@@ -5,5 +5,6 @@
              Title="HomePage:MobileCenter">
   <StackLayout Spacing="4" VerticalOptions="Center">
     <Button Text="メンバーリスト" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="Button_MemberList_Clicked" />
+    <Button Text="落ちろ！！" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="Button_Crash_Clicked" />
   </StackLayout>
 </ContentPage>

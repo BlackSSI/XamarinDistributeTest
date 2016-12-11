@@ -10,7 +10,6 @@ namespace XamarinDistributeSample.Droid
     {
         public void TrackCustomEvent(string eventName)
         {
-            Analytics.TrackEvent(eventName);
         }
 
         public void TrackUserMetric()

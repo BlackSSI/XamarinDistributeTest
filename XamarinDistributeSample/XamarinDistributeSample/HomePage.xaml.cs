@@ -20,5 +20,9 @@ namespace XamarinDistributeSample
             var detailPage = new Page.MemberListPage();
             Navigation.PushAsync(detailPage);
         }
+        public void Button_Crash_Clicked(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
