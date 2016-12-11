@@ -25,8 +25,9 @@ namespace XamarinDistributeSample.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
+            var AppId = "a8670e051ae045f4a72a604457921ad0";
             var manager = BITHockeyManager.SharedHockeyManager;
-            manager.Configure("a8670e051ae045f4a72a604457921ad0");
+            manager.Configure(AppId);
             manager.StartManager();
 
             LoadApplication(new App());
