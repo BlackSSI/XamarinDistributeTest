@@ -4,6 +4,6 @@
              x:Class="XamarinDistributeSample.HomePage"
              Title="HomePage:Base">
   <StackLayout Spacing="4" VerticalOptions="Center">
-    <Button Text="メンバーリスト" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="Button_MemberList_Clicked" />
+    <Button x:Name="MemberListButton" Text="メンバーリスト" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="Button_MemberList_Clicked" />
   </StackLayout>
 </ContentPage>
