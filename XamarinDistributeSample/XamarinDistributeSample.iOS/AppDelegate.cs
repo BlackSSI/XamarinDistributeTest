@@ -25,12 +25,14 @@ namespace XamarinDistributeSample.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            #if ENABLE_TEST_CLOUD
+#if ENABLE_TEST_CLOUD
             // requires Xamarin Test Cloud Agent
             Xamarin.Calabash.Start();
 #endif
+
+            var AppId = "a8670e051ae045f4a72a604457921ad0";
             var manager = BITHockeyManager.SharedHockeyManager;
-            manager.Configure("a8670e051ae045f4a72a604457921ad0");
+            manager.Configure(AppId);
             manager.StartManager();
 
             LoadApplication(new App());

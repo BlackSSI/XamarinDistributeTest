@@ -24,7 +24,10 @@ namespace XamarinDistributeSample.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            CrashManager.Register(this, "c7e7e0cf37a74265a0a89cf8045065db");
+            var AppId = "c7e7e0cf37a74265a0a89cf8045065db";
+            CrashManager.Register(this, AppId);
+            MetricsManager.Register(Application, AppId);
+            MetricsManager.EnableUserMetrics();
 
             LoadApplication(new App());
         }

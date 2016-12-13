@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
+using XamarinDistributeSample.Interface;
 
 namespace XamarinDistributeSample
 {
@@ -19,6 +20,12 @@ namespace XamarinDistributeSample
 
             var detailPage = new Page.MemberListPage();
             Navigation.PushAsync(detailPage);
+        }
+
+        public void Button_Crash_Clicked(object sender, EventArgs e)
+        {
+            IEventMemberCount eventCount = DependencyService.Get<IEventMemberCount>(DependencyFetchTarget.NewInstance);
+            eventCount.TrackUserMetric();
         }
     }
 }
