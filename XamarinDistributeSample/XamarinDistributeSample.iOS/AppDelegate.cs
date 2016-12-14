@@ -27,6 +27,9 @@ namespace XamarinDistributeSample.iOS
 
             MobileCenter.Configure("c5d5226f-8048-4f75-954a-21b50f15b92a");
 
+#if ENABLE_TEST_CLOUD
+Xamarin.Calabash.Start();
+#endif
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
