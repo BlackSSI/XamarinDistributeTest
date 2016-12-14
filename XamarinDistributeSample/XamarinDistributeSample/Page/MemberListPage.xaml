@@ -10,6 +10,7 @@
           <ViewCell>
             <ViewCell.View>
               <Label Text="{Binding FullName}" />
+              <Label Text="{Binding UserCounterName}" />
             </ViewCell.View>
           </ViewCell>
         </DataTemplate>
