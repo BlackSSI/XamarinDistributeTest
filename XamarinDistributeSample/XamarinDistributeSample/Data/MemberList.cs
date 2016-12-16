@@ -19,7 +19,7 @@ namespace XamarinDistributeSample.Data
             _list.Add(new Member { FullName = "犬塚あさな", UserId = "115730192449019105814", UserCounterName = "Asana Ootuka", Team = "TeamS" });
             _list.Add(new Member { FullName = "大矢真那", UserId = "116324240483798147615", UserCounterName = "Masana Ooya", Team = "TeamS" });
             _list.Add(new Member { FullName = "北川綾巴", UserId = "113971612493421284619", UserCounterName = "Ryouha Kitagawa", Team = "TeamS" });
-            _list.Add(new Member { FullName = "松井珠理奈", UserId = "102372344957102189329", UserCounterName = "Jurina Matsui", Team = "TeamS" });
+            //_list.Add(new Member { FullName = "松井珠理奈", UserId = "102372344957102189329", UserCounterName = "Jurina Matsui", Team = "TeamS" });
 
             _list.Add(new Member { FullName = "鎌田菜月", UserId = "111577742898202735013", UserCounterName = "Natsuki Kamata", Team = "TeamE" });
 
