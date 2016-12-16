@@ -69,10 +69,6 @@
       <Project>{47a92b03-8d7a-4e0f-8a47-ce95053d6f23}</Project>
       <Name>XamarinDistributeSample.Droid</Name>
     </ProjectReference>
-    <ProjectReference Include="..\XamarinDistributeSample.iOS\XamarinDistributeSample.iOS.csproj">
-      <Project>{f43d94d8-fa56-4d85-ba4c-68ca83143dc4}</Project>
-      <Name>XamarinDistributeSample.iOS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\XamarinDistributeSample\XamarinDistributeSample.csproj">
       <Project>{73af8cd2-a59b-4f51-8cd9-31c2d774e2b7}</Project>
       <Name>XamarinDistributeSample</Name>
