@@ -22,7 +22,8 @@ namespace XamarinDistributeSample.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            MobileCenter.Configure("82441178-2548-4ac2-b4c0-7b3368b0d2fa");
+            //MobileCenter.Configure("822441178-2548-4ac2-b4c0-7b3368b0d2fa");
+            MobileCenter.Configure("b901b97a-d18d-4df3-987d-8f953fdec970");
 
             LoadApplication(new App());
         }
