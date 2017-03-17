@@ -27,7 +27,7 @@ namespace XamarinDistributeSample.iOS
             global::Xamarin.Forms.Forms.Init();
 
             //MobileCenter.Configure("386a2d2e-9fd5-4929-b5b8-6bb5f305bc25");
-            MobileCenter.Configure("c5d5226f-8048-4f75-954a-21b50f15b92a");
+            //MobileCenter.Configure("c5d5226f-8048-4f75-954a-21b50f15b92a");
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 
 #if ENABLE_TEST_CLOUD

@@ -36,7 +36,6 @@ namespace XamarinDistributeSample.Page
         {
             if (e.SelectedItem == null) return;
             _member = (Member)e.SelectedItem;
-            //DisplayAlert("Item Selected", _member.UserId, "Ok");
 
             Analytics.TrackEvent(_member.UserCounterName);
 

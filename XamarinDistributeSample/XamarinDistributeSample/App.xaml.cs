@@ -31,6 +31,9 @@ namespace XamarinDistributeSample
         protected override void OnStart()
         {
             // Handle when your app starts
+            MobileCenter.Start("android=b901b97a-d18d-4df3-987d-8f953fdec970;" +
+                               "ios=c5d5226f-8048-4f75-954a-21b50f15b92a;",
+                               typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()
