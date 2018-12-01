@@ -4,7 +4,8 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
-using HockeyApp.iOS;
+using Microsoft.Azure.Mobile;
+
 
 namespace XamarinDistributeSample.iOS
 {
@@ -25,16 +26,13 @@ namespace XamarinDistributeSample.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
+            //MobileCenter.Configure("386a2d2e-9fd5-4929-b5b8-6bb5f305bc25");
+            //MobileCenter.Configure("c5d5226f-8048-4f75-954a-21b50f15b92a");
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
 #if ENABLE_TEST_CLOUD
-            // requires Xamarin Test Cloud Agent
-            Xamarin.Calabash.Start();
+Xamarin.Calabash.Start();
 #endif
-
-            var AppId = "a8670e051ae045f4a72a604457921ad0";
-            var manager = BITHockeyManager.SharedHockeyManager;
-            manager.Configure(AppId);
-            manager.StartManager();
-
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

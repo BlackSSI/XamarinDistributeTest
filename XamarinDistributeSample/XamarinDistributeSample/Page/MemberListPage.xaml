@@ -9,7 +9,10 @@
         <DataTemplate>
           <ViewCell>
             <ViewCell.View>
-              <Label Text="{Binding FullName}" />
+              <StackLayout Orientation="Vertical">
+                <Label Text="{Binding FullName}" />
+                <Label Text="{Binding UserCounterName}" />
+              </StackLayout>
             </ViewCell.View>
           </ViewCell>
         </DataTemplate>

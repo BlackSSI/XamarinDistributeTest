@@ -6,9 +6,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 
-using HockeyApp.Android;
-using HockeyApp.Android.Metrics;
 
 namespace XamarinDistributeSample.Droid
 {
@@ -24,10 +25,8 @@ namespace XamarinDistributeSample.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
-            var AppId = "c7e7e0cf37a74265a0a89cf8045065db";
-            CrashManager.Register(this, AppId);
-            MetricsManager.Register(Application, AppId);
-            MetricsManager.EnableUserMetrics();
+            //MobileCenter.Configure("822441178-2548-4ac2-b4c0-7b3368b0d2fa");
+            //MobileCenter.Configure("b901b97a-d18d-4df3-987d-8f953fdec970");
 
             LoadApplication(new App());
         }

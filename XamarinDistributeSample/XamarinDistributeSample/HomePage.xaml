@@ -2,8 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinDistributeSample.HomePage"
-             Title="HomePage:Base">
+             Title="HomePage:MobileCenter">
   <StackLayout Spacing="4" VerticalOptions="Center">
-    <Button x:Name="MemberListButton" Text="メンバーリスト" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="Button_MemberList_Clicked" />
+    <Button Text="メンバーリスト" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="Button_MemberList_Clicked" />
+    <Button Text="落ちろ！！" VerticalOptions="Start" HorizontalOptions="FillAndExpand" Clicked="Button_Crash_Clicked" />
   </StackLayout>
 </ContentPage>

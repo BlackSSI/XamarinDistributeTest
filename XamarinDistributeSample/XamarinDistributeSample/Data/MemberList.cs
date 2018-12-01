@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 using System.Collections.ObjectModel;
 using XamarinDistributeSample.Model;
 
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+using Microsoft.WindowsAzure.MobileServices;
+
 namespace XamarinDistributeSample.Data
 {
     class MemberList
@@ -19,9 +24,22 @@ namespace XamarinDistributeSample.Data
             _list.Add(new Member { FullName = "犬塚あさな", UserId = "115730192449019105814", UserCounterName = "Asana Ootuka", Team = "TeamS" });
             _list.Add(new Member { FullName = "大矢真那", UserId = "116324240483798147615", UserCounterName = "Masana Ooya", Team = "TeamS" });
             _list.Add(new Member { FullName = "北川綾巴", UserId = "113971612493421284619", UserCounterName = "Ryouha Kitagawa", Team = "TeamS" });
+            //_list.Add(new Member { FullName = "松井珠理奈", UserId = "102372344957102189329", UserCounterName = "Jurina Matsui", Team = "TeamS" });
+
             _list.Add(new Member { FullName = "鎌田菜月", UserId = "111577742898202735013", UserCounterName = "Natsuki Kamata", Team = "TeamE" });
 
             _list.Add(new Member { FullName = "高柳明音", UserId = "106926723626971174827", UserCounterName = "Akane Takayanagi", Team = "TeamK2" });
+
+            return _list;
+        }
+
+        public ObservableCollection<Member> CreateListFromAzure()
+        {
+            var _list = new ObservableCollection<Member>();
+            var client = new MobileServiceClient("https://mobile-97fd7c64-b1c6-44bf-8f20-37ada14dd768.azurewebsites.net/");
+            IMobileServiceTable<MemberListInAzure> table = client.GetTable<MemberListInAzure>();
+
+            
 
             return _list;
         }

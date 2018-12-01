@@ -1,7 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using XamarinDistributeSample.Interface;
-using HockeyApp;
+using Microsoft.Azure.Mobile.Analytics;
 
 [assembly:Xamarin.Forms.Dependency(typeof(XamarinDistributeSample.Droid.EventMemberCount))]
 
@@ -11,12 +10,10 @@ namespace XamarinDistributeSample.Droid
     {
         public void TrackCustomEvent(string eventName)
         {
-            MetricsManager.TrackEvent(eventName);
         }
 
         public void TrackUserMetric()
         {
-            throw new NotImplementedException();
         }
     }
 }

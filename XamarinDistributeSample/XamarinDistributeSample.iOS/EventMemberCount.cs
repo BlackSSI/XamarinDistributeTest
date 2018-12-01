@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using HockeyApp;
+using Microsoft.Azure.Mobile.Analytics;
 
 using XamarinDistributeSample.Interface;
 
@@ -13,12 +13,10 @@ namespace XamarinDistributeSample.iOS
     {
         public void TrackCustomEvent(string eventName)
         {
-            MetricsManager.TrackEvent(eventName);
         }
 
         public void TrackUserMetric()
         {
-            throw new NotImplementedException();
         }
     }
 }
