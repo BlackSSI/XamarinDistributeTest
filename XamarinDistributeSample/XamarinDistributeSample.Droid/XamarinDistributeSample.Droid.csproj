@@ -57,6 +57,8 @@
     <ErrorReport>prompt</ErrorReport>
     <UseShortFileNames>True</UseShortFileNames>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <AndroidSupportedAbis>
+    </AndroidSupportedAbis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Dist-iOS|AnyCPU'">
     <OutputPath>bin\Dist-iOS\</OutputPath>
